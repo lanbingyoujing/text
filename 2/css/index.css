@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+li{
+     list-style: none;
+ }
+
+div{
+    position: relative;
+    width:60px;
+    height:60px;
+    border:1px solid red;
+}
+ul{
+    position: absolute;
+    bottom:0;
+}
+li{
+    float: left;
+    width:20px;
+    height: 20px;
+    border-radius:10px;
+    background: #000;
+    margin:0 10px;
+    
+}

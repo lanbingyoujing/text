@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery.js"></script>
+
+</head>
+<body>
+
+
+
+<script>
+//    function fib(n){
+//        var res = [1,1];
+//        if(n == 1 || n == 2){
+//            return 1;
+//        }
+//        for(var i=2;i<n;i++){
+//            res[i] = res[i-1] + res[i-2];
+//        }
+//        return res[n-1];
+//    }
+    function fib2(n){
+        var num1= 0,num2= 1,num=0;
+        if (n==1){
+            return 0;
+        }
+        if (n==2||n==3){
+            return 1;
+        }
+        for(var i=2;i<n;i++){
+            num=num2+num1;
+            num1=num2;
+            num2=num;
+        }
+        return num;
+    }
+    alert(fib2(4))
+</script>
+</body>
+</html>
